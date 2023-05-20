@@ -1,0 +1,20 @@
+schemaVersion: "2.0.0"
+metadataTest:
+  entrypoint: ["npm"]
+  cmd: ["test"]
+fileExistenceTests:
+  - name: "Pasta node_nodules existe"
+    path: "/app/tests/node_modules"
+    shouldExist: true
+  - name: "Pasta e2e existe"
+    path: "/app/tests/e2e"
+    shouldExist: true
+  - name: "jest.config.js existe"
+    path: "/app/tests/jest.config.js"
+    shouldExist: true
+  - name: "package.json existe"
+    path: "/app/tests/package.json"
+    shouldExist: true
+  - name: "package-lock.json existe"
+    path: "/app/tests/package-lock.json"
+    shouldExist: true
